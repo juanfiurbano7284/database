@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f6aa3ad2-00a5-449b-856b-7865f1ff23b1",
+		"name": "clase.java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25672291"
+	},
+	"item": [
+		{
+			"name": "crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 28,\r\n    \"identificacion\": null,\r\n    \"nombres\": null,\r\n    \"apellidos\": null,\r\n    \"fechaNacimiento\": null,\r\n    \"telefono\": null,\r\n    \"correo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"TaskId\": 123, \"Name\":\"Estudiar para el quiz\", \"Deadline\": \"2023-04-13\"} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona/28",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 28,\r\n    \"identificacion\": null,\r\n    \"nombres\": null,\r\n    \"apellidos\": null,\r\n    \"fechaNacimiento\": null,\r\n    \"telefono\": null,\r\n    \"correo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"id\": 28} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
